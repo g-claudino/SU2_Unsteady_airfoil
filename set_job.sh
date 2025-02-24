@@ -19,7 +19,7 @@ echo "Running on $SLURM_NPROCS processors."
 echo "Current working directory is `pwd`"
 echo "########################################"
 
-module load SU2/7.5.1-GCC-12.2.0
+module load SU2/7.5.1-GCC-8.2.0-2.31.1
 srun -N 2 -n 128 SU2_CFD NACA64A006_Unsteady.cfg
 
 echo "########################################"
